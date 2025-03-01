@@ -112,5 +112,6 @@
       "editorInfo.foreground": "#8be9fd"
     }
   },
-  "workbench.preferredLightColorTheme": "GitHub Dark"
+  "workbench.preferredLightColorTheme": "GitHub Dark",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default"
 }
