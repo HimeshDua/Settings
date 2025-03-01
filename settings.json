@@ -1,0 +1,116 @@
+{
+  "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.eol": "\n",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "npm.keybindingsChangedWarningShown": true,
+  "editor.cursorWidth": 25,
+  "http.proxyAuthorization": null,
+  "github.gitProtocol": "ssh",
+  "git.showPushSuccessNotification": true,
+  "editor.minimap.autohide": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "omnisharp.useModernNet": false,
+  "window.zoomLevel": 1,
+  "material-icon-theme.activeIconPack": "nest",
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.fontSize": 18,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.settings.applyToAllProfiles": [],
+  "terminal.integrated.fontSize": 17,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.renderCharacters": true,
+  "nebulaOni.update.restoreConfiguration": {
+    "themeSettings": {
+      "background": "Grey",
+      "main": "Bumblebee",
+      "highlight": "Ultra Violet",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "syntaxBrightness": "Normal",
+      "comments": "Dark Violet",
+      "favorite": "OFF"
+    },
+    "favoriteSettings": {
+      "background": "Glacial Blue",
+      "main": "Sakura",
+      "highlight": "Ultra Violet",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "syntaxBrightness": "Dimmed",
+      "comments": "Dark Magenta",
+      "favorite": "Nebula Oni (Pegasus)"
+    }
+  },
+  "workbench.colorTheme": "Dracula Soft",
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
+  "editor.matchBrackets": "always",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.renderLineHighlight": "all",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.scale": 2,
+  "problems.decorations.enabled": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.renderWhitespace": "boundary",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.list.horizontalScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+  "editor.scrollBeyondLastLine": false,
+  "window.autoDetectColorScheme": true,
+  "editor.tokenColorCustomizations": {
+    "[Dracula Soft]": {
+      "functions": "#ffb86c",
+      "variables": "#8be9fd",
+      "strings": "#f1fa8c",
+      "comments": "#6272a4",
+      "keywords": "#ff79c6"
+    }
+  },
+  "workbench.colorCustomizations": {
+    "[Dracula Soft]": {
+      "editorError.foreground": "#ff5555",
+      "editorWarning.foreground": "#ffb86c",
+      "editorInfo.foreground": "#8be9fd"
+    }
+  },
+  "workbench.preferredLightColorTheme": "GitHub Dark"
+}
