@@ -18,6 +18,7 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  "vscode_custom_css.imports": ["file:///C:/Users/Dell/.vscode/custom.css"],
   "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
   "npm.keybindingsChangedWarningShown": true,
@@ -29,12 +30,12 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "smooth",
   "omnisharp.useModernNet": false,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "material-icon-theme.activeIconPack": "nest",
   "workbench.list.smoothScrolling": true,
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 19,
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.settings.applyToAllProfiles": [],
   "terminal.integrated.fontSize": 17,
@@ -72,9 +73,9 @@
       "favorite": "Nebula Oni (Pegasus)"
     }
   },
-  "workbench.colorTheme": "Dracula Soft",
-  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 26,
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.matchBrackets": "always",
   "editor.bracketPairColorization.enabled": true,
@@ -97,21 +98,41 @@
   "editor.scrollBeyondLastLine": false,
   "window.autoDetectColorScheme": true,
   "editor.tokenColorCustomizations": {
-    "[Dracula Soft]": {
-      "functions": "#ffb86c",
-      "variables": "#8be9fd",
-      "strings": "#f1fa8c",
-      "comments": "#6272a4",
+    "[GitHub Dark]": {
+      "functions": "#f78c6c",
+      "variables": "#749df6",
+      "strings": "#c3e88d",
+      "comments": "#546e7a",
       "keywords": "#ff79c6"
     }
   },
   "workbench.colorCustomizations": {
-    "[Dracula Soft]": {
-      "editorError.foreground": "#ff5555",
-      "editorWarning.foreground": "#ffb86c",
-      "editorInfo.foreground": "#8be9fd"
+    "[GitHub Dark]": {
+      "editor.foreground": "#ffcc00",
+      "editor.background": "#1a1b23",
+      "editorCursor.foreground": "#dfdfdf",
+      "editor.lineHighlightBackground": "#424242",
+      "editor.selectionBackground": "#003366",
+      "editorBracketMatch.border": "#ef840b"
     }
   },
   "workbench.preferredLightColorTheme": "GitHub Dark",
-  "workbench.preferredDarkColorTheme": "GitHub Dark Default"
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "editor.fontWeight": "normal",
+  "errorLens.errorTextColor": "#ff5555",
+  "errorLens.errorBackground": "#ff55551a",
+  "errorLens.errorForeground": "#ff5555",
+  "errorLens.errorMessageBackground": "#ff555510",
+  "errorLens.errorBackgroundLight": "#ff55551a",
+  "errorLens.errorForegroundLight": "#ff5555",
+  "errorLens.errorBorderWidth": "2px",
+  "errorLens.errorBorderColor": "#ff5555",
+  "errorLens.warningTextColor": "#ffb86c",
+  "errorLens.warningBackground": "#ffb86c1a",
+  "errorLens.warningForeground": "#ffb86c",
+  "errorLens.warningMessageBackground": "#ffb86c10",
+  "errorLens.fontWeight": "bold",
+  "errorLens.fontStyleItalic": true,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
+  "errorLens.exclude": []
 }
