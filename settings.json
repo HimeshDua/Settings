@@ -37,9 +37,7 @@
   "terminal.integrated.smoothScrolling": true,
   "editor.fontSize": 19,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.settings.applyToAllProfiles": [
-  
-  ],
+  "workbench.settings.applyToAllProfiles": [],
   "terminal.integrated.fontSize": 17,
   "liveServer.settings.donotShowInfoMsg": true,
   "[json]": {
@@ -49,7 +47,9 @@
     "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "javascript": true,
+    "json": true
   },
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.renderCharacters": true,
@@ -77,54 +77,46 @@
   "terminal.integrated.cursorBlinking": true,
   "editor.scrollBeyondLastLine": false,
   "window.autoDetectColorScheme": true,
+  "editor.showUnused": true,
+  "editor.showDeprecated": true,
   "editor.tokenColorCustomizations": {
-    "[GitHub Dark]": {
-      "functions": "#f78c6c",
-      "variables": "#749df6",
-      // "variables": "#e3e5e9",
-      "strings": "#c3e88d",
-      "comments": "#546e7a",
-      "keywords": "#ff79c6"
-    },
-    "[GitHub Light]": {
-      "functions": "#f78c6c",
-      "variables": "#749df6",
-      // "variables": "#e3e5e9",
-      "strings": "#c3e88d",
-      "comments": "#546e7a",
-      "keywords": "#ff79c6"
-    }
+    "textMateRules": [
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
   },
   "workbench.colorCustomizations": {
     "[GitHub Dark]": {
-      "editor.foreground": "#ffcc00",
-      "editor.background": "#1a1b2324",
-      "editorCursor.foreground": "#dfdfdf",
       "editor.lineHighlightBackground": "#424242",
-      "editor.selectionBackground": "#003366",
-      "editorBracketMatch.border": "#ef840b"
-    }
+      "editor.selectionBackground": "#003366"
+    },
+    "workbench.preferredLightColorTheme": "Default",
+    "workbench.preferredDarkColorTheme": "Default",
+    "editor.fontWeight": "300",
+    "errorLens.errorTextColor": "#ff5555",
+    "errorLens.errorBackground": "#ff55551a",
+    "errorLens.errorForeground": "#ff5555",
+    "errorLens.errorMessageBackground": "#ff555510",
+    "errorLens.errorBackgroundLight": "#ff55551a",
+    "errorLens.errorForegroundLight": "#ff5555",
+    "errorLens.errorBorderWidth": "2px",
+    "errorLens.errorBorderColor": "#ff5555",
+    "errorLens.warningTextColor": "#ffb86c",
+    "errorLens.warningBackground": "#ffb86c1a",
+    "errorLens.warningForeground": "#ffb86c",
+    "errorLens.warningMessageBackground": "#ffb86c10",
+    "errorLens.fontWeight": "bold",
+    "errorLens.fontStyleItalic": true,
+    "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
+    "errorLens.exclude": [],
+    "git.autofetch": true,
+    "workbench.productIconTheme": "bongocat",
+    "git.enableSmartCommit": true
   },
-  "workbench.preferredLightColorTheme": "GitHub Dark",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "editor.fontWeight": "300",
-  "errorLens.errorTextColor": "#ff5555",
-  "errorLens.errorBackground": "#ff55551a",
-  "errorLens.errorForeground": "#ff5555",
-  "errorLens.errorMessageBackground": "#ff555510",
-  "errorLens.errorBackgroundLight": "#ff55551a",
-  "errorLens.errorForegroundLight": "#ff5555",
-  "errorLens.errorBorderWidth": "2px",
-  "errorLens.errorBorderColor": "#ff5555",
-  "errorLens.warningTextColor": "#ffb86c",
-  "errorLens.warningBackground": "#ffb86c1a",
-  "errorLens.warningForeground": "#ffb86c",
-  "errorLens.warningMessageBackground": "#ffb86c10",
-  "errorLens.fontWeight": "bold",
-  "errorLens.fontStyleItalic": true,
-  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
-  "errorLens.exclude": [],
-  "git.autofetch": true,
-  "workbench.productIconTheme": "bongocat",
   "git.enableSmartCommit": true
 }
