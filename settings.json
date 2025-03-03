@@ -37,14 +37,16 @@
   "terminal.integrated.smoothScrolling": true,
   "editor.fontSize": 19,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.applyToAllProfiles": [
+  
+  ],
   "terminal.integrated.fontSize": 17,
   "liveServer.settings.donotShowInfoMsg": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false
