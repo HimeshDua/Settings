@@ -1,5 +1,5 @@
 {
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -30,14 +30,16 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "smooth",
   "omnisharp.useModernNet": false,
-  "window.zoomLevel": 0.6,
+  "window.zoomLevel": 0.7,
   "material-icon-theme.activeIconPack": "nest",
   "workbench.list.smoothScrolling": true,
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.fontSize": 19,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.applyToAllProfiles": [
+  
+  ],
   "terminal.integrated.fontSize": 17,
   "liveServer.settings.donotShowInfoMsg": true,
   "[json]": {
@@ -45,15 +47,15 @@
   },
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true,
     "javascript": false,
     "json": true
   },
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.renderCharacters": true,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Dark Chai",
   "editor.fontFamily": "JetBrains Mono, Fira Code, Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
@@ -66,9 +68,9 @@
   "editor.minimap.scale": 2,
   "problems.decorations.enabled": true,
   "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
   },
   "editor.renderWhitespace": "boundary",
   "workbench.tree.indent": 12,
@@ -85,12 +87,6 @@
         "scope": ["variable.parameter"],
         "settings": {
           "fontStyle": "italic bold"
-        }
-      },
-      {
-        "scope": "comment",
-        "settings": {
-          "foreground": "#6A9955"
         }
       }
     ]
@@ -157,5 +153,68 @@
     "git.enableSmartCommit": true
   },
   "workbench.preferredDarkColorTheme": "Dark Chai",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "editor.quickSuggestionsDelay": 5,
+  "highlight.regexes": {
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#ffcc00",
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc0000",
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#00ccff",
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc00cc",
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ]
+    }
+  }
 }
