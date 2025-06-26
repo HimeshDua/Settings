@@ -1,7 +1,7 @@
 {
-  "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, monospace",
-  "editor.fontSize": 16,
-  "editor.fontLigatures": true,
+  // "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, monospace",
+  "editor.fontFamily": "Menlo, JetBrains Mono, Fira Code, Consolas, monospace",
+  "editor.fontLigatures": false,
   "editor.lineHeight": 22,
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "smooth",
@@ -48,11 +48,57 @@
       "editorLineNumber.activeForeground": "#c9d1d9",
       "panel.background": "#161b22",
       "input.background": "#0d1117"
+    },
+    "[Vira*]": {
+      "toolbar.activeBackground": "#80CBC426",
+      "button.background": "#80CBC4",
+      "button.hoverBackground": "#80CBC4cc",
+      "extensionButton.separator": "#80CBC433",
+      "extensionButton.background": "#80CBC414",
+      "extensionButton.foreground": "#80CBC4",
+      "extensionButton.hoverBackground": "#80CBC433",
+      "extensionButton.prominentForeground": "#80CBC4",
+      "extensionButton.prominentBackground": "#80CBC414",
+      "extensionButton.prominentHoverBackground": "#80CBC433",
+      "activityBarBadge.background": "#80CBC4",
+      "activityBar.activeBorder": "#80CBC4",
+      "activityBarTop.activeBorder": "#80CBC4",
+      "list.inactiveSelectionIconForeground": "#80CBC4",
+      "list.activeSelectionForeground": "#80CBC4",
+      "list.inactiveSelectionForeground": "#80CBC4",
+      "list.highlightForeground": "#80CBC4",
+      "sash.hoverBorder": "#80CBC480",
+      "list.activeSelectionIconForeground": "#80CBC4",
+      "scrollbarSlider.activeBackground": "#80CBC480",
+      "editorSuggestWidget.highlightForeground": "#80CBC4",
+      "textLink.foreground": "#80CBC4",
+      "progressBar.background": "#80CBC4",
+      "pickerGroup.foreground": "#80CBC4",
+      "tab.activeBorder": "#80CBC4",
+      "notificationLink.foreground": "#80CBC4",
+      "editorWidget.resizeBorder": "#80CBC4",
+      "editorWidget.border": "#80CBC4",
+      "settings.modifiedItemIndicator": "#80CBC4",
+      "panelTitle.activeBorder": "#80CBC4",
+      "breadcrumb.activeSelectionForeground": "#80CBC4",
+      "menu.selectionForeground": "#80CBC4",
+      "menubar.selectionForeground": "#80CBC4",
+      "editor.findMatchBorder": "#80CBC4",
+      "selection.background": "#80CBC440",
+      "statusBarItem.remoteBackground": "#80CBC414",
+      "statusBarItem.remoteHoverBackground": "#80CBC4",
+      "statusBarItem.remoteForeground": "#80CBC4",
+      "notebook.inactiveFocusedCellBorder": "#80CBC480",
+      "commandCenter.activeBorder": "#80CBC480",
+      "chat.slashCommandForeground": "#80CBC4",
+      "chat.avatarForeground": "#80CBC4",
+      "activityBarBadge.foreground": "#000000",
+      "button.foreground": "#000000",
+      "statusBarItem.remoteHoverForeground": "#000000"
     }
   },
   "git.enableSmartCommit": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dark Chai",
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -73,9 +119,38 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "settingsSync.ignoredSettings": [
-    
-  ]
+  "settingsSync.ignoredSettings": ["-git.path"],
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.fontSize": 16,
+  "svg.minify.removeHiddenElems": false,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "dogg": {
+      "path": "/usr/bin/zsh"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "json.schemas": []
 }
