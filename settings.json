@@ -98,7 +98,6 @@
     }
   },
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Sublime Material Theme - Dark",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -152,5 +151,33 @@
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
-  "json.schemas": []
+  "json.schemas": [],
+  "editor.unicodeHighlight.allowedLocales": {
+    "cs": true
+  },
+  "[bg3txt]": {
+    "editor.defaultFormatter": "fierrof.bg3txt-formatter"
+  },
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pptx": "default",
+    "*.sqlite": "sqlite-viewer.view"
+  },
+  "svg.preview.mode": "svg",
+  "git.ignoreRebaseWarning": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  }
 }
