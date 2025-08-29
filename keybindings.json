@@ -1,0 +1,125 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+w",
+    "command": "-workbench.action.closeAllGroups"
+  },
+  {
+    "key": "ctrl+alt+pagedown",
+    "command": "-workbench.action.chat.nextCodeBlock",
+    "when": "chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.insertCursorBelow"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+e ctrl+q",
+    "command": "-sqltools.bookmarkSelection",
+    "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+r",
+    "command": "-sqltools.deleteBookmark",
+    "when": "!config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+d",
+    "command": "-sqltools.describeTable",
+    "when": "!config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+e",
+    "command": "-sqltools.executeQuery",
+    "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+s",
+    "command": "-sqltools.showRecords",
+    "when": "!config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+h",
+    "command": "-sqltools.runFromHistory",
+    "when": "!config.sqltools.disableChordKeybindings"
+  },
+  {
+    "key": "ctrl+e ctrl+b",
+    "command": "-sqltools.formatSql",
+    "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings && !editorReadonly"
+  },
+  {
+    "key": "ctrl+e ctrl+a",
+    "command": "-sqltools.runFromBookmarks",
+    "when": "!config.sqltools.disableChordKeybindings"
+  }
+]
