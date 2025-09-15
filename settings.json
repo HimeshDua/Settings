@@ -244,9 +244,8 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 20,
   "workbench.editor.revealIfOpen": true,
-  "workbench.editor.tabCloseButton": "left",
   "workbench.editor.wrapTabs": true,
-  "workbench.editor.tabActionLocation": "left",
+  "workbench.editor.tabActionLocation": "right",
   "workbench.iconTheme": "vscode-icons",
   "workbench.fontAliasing": "antialiased",
   "workbench.layoutControl.enabled": true,
@@ -415,5 +414,7 @@
   "liveshare.featureSet": "stable",
   "liveshare.showInStatusBar": "whileCollaborating",
   "vitest.enable": true,
-  "remoteHub.uncommittedChangesOnEntry": "none"
+  "remoteHub.uncommittedChangesOnEntry": "none",
+  "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
+  "workbench.settings.applyToAllProfiles": []
 }
