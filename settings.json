@@ -21,10 +21,11 @@
   "[astro]": {
     // "editor.defaultFormatter": "dprint.dprint"
   },
-  "[python]": { "editor.formatOnType": true },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[python]": {"editor.formatOnType": true},
+  "[javascript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
+  "[jsonc]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
     // "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -48,7 +49,7 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": false,
-  "editor.rulers": [80],
+  // "editor.rulers": [80],
   "editor.showFoldingControls": "always",
   "editor.foldingStrategy": "indentation",
   "editor.guides.indentation": false,
@@ -86,7 +87,7 @@
       "textMateRules": [
         {
           "scope": "ref.matchtext",
-          "settings": { "foreground": "#000" }
+          "settings": {"foreground": "#000"}
         }
       ]
     },
@@ -94,7 +95,7 @@
       "textMateRules": [
         {
           "scope": "ref.matchtext",
-          "settings": { "foreground": "#fff" }
+          "settings": {"foreground": "#fff"}
         }
       ]
     },
@@ -184,6 +185,14 @@
   "eslint.packageManager": "yarn",
   "prettier.semi": false,
   "prettier.singleQuote": true,
+  "prettier.tabWidth": 2, // Always 2 spaces
+  "prettier.useTabs": false, // Force spaces instead of tabs
+  "prettier.semi": true, // End statements with ;
+  "prettier.singleQuote": true, // Prefer ' over "
+  "prettier.trailingComma": "es5", // Trailing commas where valid in ES5 (objects, arrays, etc.)
+  "prettier.bracketSpacing": false, // Less spacing: {foo:bar} instead of { foo: bar }
+  "prettier.printWidth": 100, // Wrap lines after 100 chars
+  "prettier.arrowParens": "avoid", // Cleaner: x => x instead of (x) => x,
   "github.copilot.editor.enableAutoCompletions": true,
   "CodeGPT.apiKey": "CodeGPT Plus Beta",
 
@@ -274,9 +283,9 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
 
   // Accessibility & signals
-  "accessibility.signals.chatRequestSent": { "sound": "on" },
-  "accessibility.signals.save": { "announcement": "userGesture" },
-  "accessibility.signals.terminalBell": { "sound": "on" },
+  "accessibility.signals.chatRequestSent": {"sound": "on"},
+  "accessibility.signals.save": {"announcement": "userGesture"},
+  "accessibility.signals.terminalBell": {"sound": "on"},
 
   // Misc: UX niceties
   "breadcrumbs.enabled": true,
@@ -290,12 +299,12 @@
   "dotenv.enableAutocloaking": false,
   "colorize.hide_current_line_decorations": false,
   "colorInfo.languages": [
-    { "selector": "css", "colors": "css" },
-    { "selector": "sass", "colors": "css" },
-    { "selector": "scss", "colors": "css" },
-    { "selector": "less", "colors": "css" },
-    { "selector": "ts", "colors": "css" },
-    { "selector": "js", "colors": "css" }
+    {"selector": "css", "colors": "css"},
+    {"selector": "sass", "colors": "css"},
+    {"selector": "scss", "colors": "css"},
+    {"selector": "less", "colors": "css"},
+    {"selector": "ts", "colors": "css"},
+    {"selector": "js", "colors": "css"}
   ],
 
   // Emmet + snippets + surrounds
@@ -307,7 +316,7 @@
     "nunjucks": "html",
     "postcss": "css"
   },
-  "emmet.syntaxProfiles": { "postcss": "css" },
+  "emmet.syntaxProfiles": {"postcss": "css"},
   "emmet.showAbbreviationSuggestions": true,
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
@@ -318,38 +327,21 @@
       "description": "Promise<...>",
       "disabled": false,
       "label": "Promise<...>",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
+      "languageIds": ["javascript", "javascriptreact", "typescript", "typescriptreact", "astro"],
       "snippet": "Promise<$TM_SELECTED_TEXT>"
     },
     "console-log": {
       "description": "console.log( ... )",
       "disabled": false,
       "label": "console.log",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
+      "languageIds": ["javascript", "javascriptreact", "typescript", "typescriptreact", "astro"],
       "snippet": "console.log(`$TM_SELECTED_TEXT`, $TM_SELECTED_TEXT)"
     },
     "describe": {
       "description": "describe('${1:name}', () => { ... })",
       "disabled": false,
       "label": "describe",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-      ],
+      "languageIds": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
       "snippet": "describe('${1:name}', () => {\n\t$TM_SELECTED_TEXT\n})$0"
     }
     // keep adding your other surround snippets as needed...
@@ -416,5 +408,13 @@
   "vitest.enable": true,
   "remoteHub.uncommittedChangesOnEntry": "none",
   "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
-  "workbench.settings.applyToAllProfiles": []
+  "window.titleBarStyle": "custom",
+  "workbench.settings.applyToAllProfiles": [
+    
+
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.preferredLightColorTheme": "Default Dark+"
 }
