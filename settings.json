@@ -255,7 +255,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.wrapTabs": true,
   "workbench.editor.tabActionLocation": "right",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.fontAliasing": "antialiased",
   "workbench.layoutControl.enabled": true,
   "workbench.list.horizontalScrolling": true,
@@ -270,7 +270,6 @@
   "window.restoreFullscreen": true,
   "window.restoreWindows": "all",
   "window.title": "${rootName}",
-  "window.zoomLevel": 0,
 
   // Performance / telemetry
   "telemetry.enableTelemetry": false,
@@ -407,14 +406,36 @@
   "liveshare.showInStatusBar": "whileCollaborating",
   "vitest.enable": true,
   "remoteHub.uncommittedChangesOnEntry": "none",
-  "workbench.preferredDarkColorTheme": "Sublime Material Theme - Dark",
+  "workbench.preferredDarkColorTheme": "Eva Dark",
   "window.titleBarStyle": "custom",
-  "workbench.settings.applyToAllProfiles": [
-    
-
-  ],
+  "workbench.settings.applyToAllProfiles": [],
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.preferredLightColorTheme": "Default Dark+"
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "php": true,
+    "typescriptreact": true,
+    "typescript": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none",
+  "wallpaper-setting.wallpaper.filePath": "c:\\Users\\User\\Downloads\\download.jpg",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "kilo-code.allowedCommands": ["git log", "git diff", "git show"],
+  "kilo-code.deniedCommands": [],
+  "vsicons.dontShowNewVersionMessage": true,
+  "prisma.hidePrisma6Prompts": true,
+  "git.enableSmartCommit": true,
+  "dart.sdkPath": "C:\\tools\\dart-sdk",
+  "json.schemas": [
+    
+  ]
 }
