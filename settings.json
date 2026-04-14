@@ -406,15 +406,15 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "workbench.preferredLightColorTheme": "Default Dark+",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
     "php": true,
     "typescriptreact": false,
     "typescript": false,
+    "dart": true,
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -428,15 +428,11 @@
   "vsicons.dontShowNewVersionMessage": true,
   "prisma.hidePrisma6Prompts": true,
   "git.enableSmartCommit": true,
-  "dart.sdkPath": "C:\\tools\\dart-sdk",
   "json.schemas": [],
   "workbench.editor.enablePreview": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "dart.flutterSdkPath": "C:\\Users\\User\\develop\\flutter",
-  "workbench.preferredDarkColorTheme": "Eva Dark",
-  "window.zoomLevel": 1,
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
     "https://raw.githubusercontent.com/": true,
@@ -445,4 +441,27 @@
     "https://json-schema.org/": true,
     "https://ui.shadcn.com/schema.json": true,
   },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash",
+    },
+    "zsh": {
+      "path": "/usr/bin/zsh",
+    },
+    "fish": {
+      "path": "fish",
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux",
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell",
+    },
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "dart.flutterSdkPath": "/home/rich/flutter",
+  "workbench.preferredDarkColorTheme": "Claude Dark",
 }
